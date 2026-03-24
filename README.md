@@ -71,6 +71,24 @@ xhs-autopilot/
 
 修改人设：打开 `docs/cron-jobs.md`，找到 prompt 里的人设描述替换即可
 
+## 依赖的三个 OpenClaw Skill
+
+这套工作流在运行时会调用以下三个 Skill，需要提前在 OpenClaw 中安装：
+
+### 1. humanizer-zh（AI文本润色）
+**作用**：去除文案中的 AI 味，让内容更像真人写的
+**安装**：在 OpenClaw Skill 市场搜索 `humanizer-zh` 安装
+
+### 2. write-xiaohongshu（小红书爆款创作助手）
+**作用**：研究爆款规律，生成标题+正文
+**安装**：在 OpenClaw Skill 市场搜索 `write-xiaohongshu` 安装
+
+### 3. Auto-Redbook（自动发布）
+**作用**：生成图片卡片并配合发布流程
+**安装**：在 OpenClaw Skill 市场搜索 `Auto-Redbook` 安装
+
+> 以上三个 Skill 安装完成后，Cron 任务的 Prompt 会自动调用，无需额外配置。
+
 ## 注意事项
 
 - 需要小红书账号已在浏览器登录
